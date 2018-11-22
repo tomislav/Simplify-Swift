@@ -1,6 +1,5 @@
 # Simplify-Swift
 
-[![CI Status](https://img.shields.io/travis/tomislav/Simplify-Swift.svg?style=flat)](https://travis-ci.org/tomislav/Simplify-Swift)
 [![Version](https://img.shields.io/cocoapods/v/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)
 [![License](https://img.shields.io/cocoapods/l/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)
 [![Platform](https://img.shields.io/cocoapods/p/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)

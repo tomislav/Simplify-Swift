@@ -22,7 +22,6 @@
 //  THE SOFTWARE.
 
 import Foundation
-import UIKit
 import CoreLocation
 
 public protocol SimplifyValue {

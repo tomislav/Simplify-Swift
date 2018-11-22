@@ -1,0 +1,6 @@
+framework module Simplify_Swift {
+  umbrella header "Simplify-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1109C4EFF4C791910AC29C686432AD22 /* Pods-Simplify-Swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A237A929AADFBEE851CF1B5D85B9A6D8 /* Pods-Simplify-Swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3049AFC0DFA689F8D392AF6AA46015B2 /* Simplify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */; };
+		56887355ECA9510D5B68D8DF3C343E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		97A361CD3D4973EA84703E9FCAB9EB23 /* Simplify-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A35432FF70E357475921989E90F432E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		BE6BC4BB719FB3C22741A6364FAAD578 /* Pods-Simplify-Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644BE0FD8B465978C55F91654CF914A /* Pods-Simplify-Swift_Example-dummy.m */; };
+		DA22E9F1235E5C5E93B708260E42CB6A /* Simplify-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3034247E06E5267EC1D12539F7CDBAC1 /* Simplify-Swift-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF8F3293A53F91B74C0274D94492BAA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB591F490F3A18FB87077078AF3996C;
+			remoteInfo = "Simplify-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0070ADFDF84914F112504907A8B9ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		023F8E142C55200404B444E02D4F3589 /* Simplify-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Simplify-Swift.modulemap"; sourceTree = "<group>"; };
+		0644BE0FD8B465978C55F91654CF914A /* Pods-Simplify-Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simplify-Swift_Example-dummy.m"; sourceTree = "<group>"; };
+		0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simplify.swift; path = "Simplify-Swift/Classes/Simplify.swift"; sourceTree = "<group>"; };
+		0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-umbrella.h"; sourceTree = "<group>"; };
+		1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Simplify-Swift.xcconfig"; sourceTree = "<group>"; };
+		17EB9F73DB60DE8351FA4A63F2B6E33E /* Pods-Simplify-Swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-resources.sh"; sourceTree = "<group>"; };
+		1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "Simplify-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3034247E06E5267EC1D12539F7CDBAC1 /* Simplify-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Simplify-Swift-dummy.m"; sourceTree = "<group>"; };
+		7974A66AAF9FA704FF50C77BA5D31D65 /* Pods-Simplify-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplify-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		797F48335B56B00418BBE333FF97D7C1 /* Pods-Simplify-Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simplify-Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A237A929AADFBEE851CF1B5D85B9A6D8 /* Pods-Simplify-Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simplify-Swift_Example-umbrella.h"; sourceTree = "<group>"; };
+		AC09FD8FC41018122876CA2B1CCD1823 /* Pods-Simplify-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplify-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C10B78C1616A1D8306C6FFC12125DFCF /* Pods-Simplify-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C61DD57A2357C44B12BFB16E51196E2D /* Pods-Simplify-Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simplify-Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C67C1EE05E95BCA112980700E4C39D2E /* Pods-Simplify-Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Simplify-Swift_Example.modulemap"; sourceTree = "<group>"; };
+		C6D1572266475656197C1C938FC0FD60 /* Simplify_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Simplify_Swift.framework; path = "Simplify-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5A8FF7CF8863D7EE4F889DA0F2F1799 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9CBF1ADB84105D68B8964EB031BAE0 /* Pods_Simplify_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simplify_Swift_Example.framework; path = "Pods-Simplify-Swift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F104204AD919948C36AEAC49D641640D /* Simplify-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-prefix.pch"; sourceTree = "<group>"; };
+		F1C46EB20C33AA5FA0C1B497A17ADB38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD50C48388C5F10878363B095616E498 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF31DF9D83ED860718937F5800CF75B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35432FF70E357475921989E90F432E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E233CE9E0EF35B322F6D47157CBF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56887355ECA9510D5B68D8DF3C343E06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		198BCB0001F3F9E3227BFC187E5FD569 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A8FF7CF8863D7EE4F889DA0F2F1799 /* Info.plist */,
+				023F8E142C55200404B444E02D4F3589 /* Simplify-Swift.modulemap */,
+				1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */,
+				3034247E06E5267EC1D12539F7CDBAC1 /* Simplify-Swift-dummy.m */,
+				F104204AD919948C36AEAC49D641640D /* Simplify-Swift-prefix.pch */,
+				0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Simplify-Swift";
+			sourceTree = "<group>";
+		};
+		2298A51ED6893D77B1191DDA622A7431 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B7CF4C7FF563FB4A9B53DBE9C3BFA0 /* Simplify-Swift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2C3BE13DAF10582043FB38F69CA9C3BE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9602B87A3879E8EEAF9CF91F59293FD /* Pods-Simplify-Swift_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D0644A870E439DA11680B3E0DF34461 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FD50C48388C5F10878363B095616E498 /* LICENSE */,
+				0070ADFDF84914F112504907A8B9ABF0 /* README.md */,
+				1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2298A51ED6893D77B1191DDA622A7431 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8F895647C1F4DF0FF9EEC9C23D67076F /* Products */,
+				2C3BE13DAF10582043FB38F69CA9C3BE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F895647C1F4DF0FF9EEC9C23D67076F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA9CBF1ADB84105D68B8964EB031BAE0 /* Pods_Simplify_Swift_Example.framework */,
+				C6D1572266475656197C1C938FC0FD60 /* Simplify_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B7CF4C7FF563FB4A9B53DBE9C3BFA0 /* Simplify-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */,
+				6D0644A870E439DA11680B3E0DF34461 /* Pod */,
+				198BCB0001F3F9E3227BFC187E5FD569 /* Support Files */,
+			);
+			name = "Simplify-Swift";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D9602B87A3879E8EEAF9CF91F59293FD /* Pods-Simplify-Swift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F1C46EB20C33AA5FA0C1B497A17ADB38 /* Info.plist */,
+				C67C1EE05E95BCA112980700E4C39D2E /* Pods-Simplify-Swift_Example.modulemap */,
+				C61DD57A2357C44B12BFB16E51196E2D /* Pods-Simplify-Swift_Example-acknowledgements.markdown */,
+				797F48335B56B00418BBE333FF97D7C1 /* Pods-Simplify-Swift_Example-acknowledgements.plist */,
+				0644BE0FD8B465978C55F91654CF914A /* Pods-Simplify-Swift_Example-dummy.m */,
+				C10B78C1616A1D8306C6FFC12125DFCF /* Pods-Simplify-Swift_Example-frameworks.sh */,
+				17EB9F73DB60DE8351FA4A63F2B6E33E /* Pods-Simplify-Swift_Example-resources.sh */,
+				A237A929AADFBEE851CF1B5D85B9A6D8 /* Pods-Simplify-Swift_Example-umbrella.h */,
+				AC09FD8FC41018122876CA2B1CCD1823 /* Pods-Simplify-Swift_Example.debug.xcconfig */,
+				7974A66AAF9FA704FF50C77BA5D31D65 /* Pods-Simplify-Swift_Example.release.xcconfig */,
+			);
+			name = "Pods-Simplify-Swift_Example";
+			path = "Target Support Files/Pods-Simplify-Swift_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		509C791733EC4449ED820AEB047363DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A361CD3D4973EA84703E9FCAB9EB23 /* Simplify-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A57CD9E46902701F95F503B88E7EA92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1109C4EFF4C791910AC29C686432AD22 /* Pods-Simplify-Swift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BD57E9674D9A528231CC79DCA437EF3 /* Pods-Simplify-Swift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C58C9875F3D0682B20214ABB0424D1 /* Build configuration list for PBXNativeTarget "Pods-Simplify-Swift_Example" */;
+			buildPhases = (
+				8A57CD9E46902701F95F503B88E7EA92 /* Headers */,
+				BB4E45E94F2CA0C23D96C50D99F426B9 /* Sources */,
+				E8E233CE9E0EF35B322F6D47157CBF59 /* Frameworks */,
+				D2A6986865807D02F184BA8DE897BCCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCB17817007C426521357CACF06B91A /* PBXTargetDependency */,
+			);
+			name = "Pods-Simplify-Swift_Example";
+			productName = "Pods-Simplify-Swift_Example";
+			productReference = EA9CBF1ADB84105D68B8964EB031BAE0 /* Pods_Simplify_Swift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAB591F490F3A18FB87077078AF3996C /* Simplify-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED533EAB3FDAAA1FD6D6604A0616A51 /* Build configuration list for PBXNativeTarget "Simplify-Swift" */;
+			buildPhases = (
+				509C791733EC4449ED820AEB047363DB /* Headers */,
+				CD253527DD91C9571F6014CE083FC3FD /* Sources */,
+				DF31DF9D83ED860718937F5800CF75B2 /* Frameworks */,
+				C2BBD58B679E37F2A3369B51D115C96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simplify-Swift";
+			productName = "Simplify-Swift";
+			productReference = C6D1572266475656197C1C938FC0FD60 /* Simplify_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8F895647C1F4DF0FF9EEC9C23D67076F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BD57E9674D9A528231CC79DCA437EF3 /* Pods-Simplify-Swift_Example */,
+				DAB591F490F3A18FB87077078AF3996C /* Simplify-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2BBD58B679E37F2A3369B51D115C96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6986865807D02F184BA8DE897BCCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4E45E94F2CA0C23D96C50D99F426B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6BC4BB719FB3C22741A6364FAAD578 /* Pods-Simplify-Swift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD253527DD91C9571F6014CE083FC3FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA22E9F1235E5C5E93B708260E42CB6A /* Simplify-Swift-dummy.m in Sources */,
+				3049AFC0DFA689F8D392AF6AA46015B2 /* Simplify.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FCB17817007C426521357CACF06B91A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Simplify-Swift";
+			target = DAB591F490F3A18FB87077078AF3996C /* Simplify-Swift */;
+			targetProxy = DF8F3293A53F91B74C0274D94492BAA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		571561AFC5C41933831F820FFF2567E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC09FD8FC41018122876CA2B1CCD1823 /* Pods-Simplify-Swift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Simplify-Swift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simplify-Swift_Example/Pods-Simplify-Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		742B5C7374757E4C346FF07DE8D4FFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Simplify-Swift/Simplify-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Simplify-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Simplify-Swift/Simplify-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Simplify_Swift;
+				PRODUCT_NAME = Simplify_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		752CB56B7B1268BC25EF253BFC80AC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Simplify-Swift/Simplify-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Simplify-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Simplify-Swift/Simplify-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Simplify_Swift;
+				PRODUCT_NAME = Simplify_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B76FBA9E0D2BDBA6EBA1B62F3317B835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7974A66AAF9FA704FF50C77BA5D31D65 /* Pods-Simplify-Swift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Simplify-Swift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simplify-Swift_Example/Pods-Simplify-Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
+				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C58C9875F3D0682B20214ABB0424D1 /* Build configuration list for PBXNativeTarget "Pods-Simplify-Swift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571561AFC5C41933831F820FFF2567E4 /* Debug */,
+				B76FBA9E0D2BDBA6EBA1B62F3317B835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED533EAB3FDAAA1FD6D6604A0616A51 /* Build configuration list for PBXNativeTarget "Simplify-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752CB56B7B1268BC25EF253BFC80AC3B /* Debug */,
+				742B5C7374757E4C346FF07DE8D4FFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -8,35 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Simplify-Swift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Simplify-Swift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'A high performance Swift 2D/3D polyline simplification library'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simplify-Swift is a high-performance Swift polyline simplification library ported from Simplify.js. The original Javascript library was extracted from Leaflet, a JS interactive maps library by Vladimir Agafonkin. It uses a combination of Douglas-Peucker and Radial Distance algorithms. Polyline simplification dramatically reduces the number of points in a polyline while retaining its shape, giving a huge performance boost when processing it and also reducing visual noise.
                        DESC
 
-  s.homepage         = 'https://github.com/Tomislav Filipcic/Simplify-Swift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/tomislav/Simplify-Swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tomislav Filipcic' => 'tf@7sols.com' }
-  s.source           = { :git => 'https://github.com/Tomislav Filipcic/Simplify-Swift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'Simplify-Swift/Classes/**/*'
+  s.source           = { :git => 'https://github.com/tomislav/Simplify-Swift.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/tomislav'
   
-  # s.resource_bundles = {
-  #   'Simplify-Swift' => ['Simplify-Swift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '9.3'
+  s.source_files = 'Simplify-Swift/Classes/**/*'
+  s.frameworks = 'UIKit', 'MapKit'
 end

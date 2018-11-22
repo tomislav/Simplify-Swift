@@ -1,0 +1,16 @@
+PODS:
+  - Simplify-Swift (1.0.0)
+
+DEPENDENCIES:
+  - Simplify-Swift (from `../`)
+
+EXTERNAL SOURCES:
+  Simplify-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Simplify-Swift: fe1b189011b5049dc0330d41bb283a74300a7806
+
+PODFILE CHECKSUM: 5e94447c08e0d4ad8cfc75dd50897dc8b7703fc2
+
+COCOAPODS: 1.5.3

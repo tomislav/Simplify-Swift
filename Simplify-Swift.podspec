@@ -23,6 +23,5 @@ Simplify-Swift is a high-performance Swift polyline simplification library porte
   
   s.ios.deployment_target = '9.3'
   s.source_files = 'Simplify-Swift/Classes/**/*'
-  s.frameworks = 'UIKit', 'MapKit'
   s.swift_version = '4.2'
 end

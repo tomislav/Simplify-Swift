@@ -27,30 +27,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0070ADFDF84914F112504907A8B9ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0070ADFDF84914F112504907A8B9ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		023F8E142C55200404B444E02D4F3589 /* Simplify-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Simplify-Swift.modulemap"; sourceTree = "<group>"; };
 		0644BE0FD8B465978C55F91654CF914A /* Pods-Simplify-Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simplify-Swift_Example-dummy.m"; sourceTree = "<group>"; };
 		0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simplify.swift; path = "Simplify-Swift/Classes/Simplify.swift"; sourceTree = "<group>"; };
 		0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-umbrella.h"; sourceTree = "<group>"; };
 		1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Simplify-Swift.xcconfig"; sourceTree = "<group>"; };
 		17EB9F73DB60DE8351FA4A63F2B6E33E /* Pods-Simplify-Swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-resources.sh"; sourceTree = "<group>"; };
-		1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "Simplify-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "Simplify-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3034247E06E5267EC1D12539F7CDBAC1 /* Simplify-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Simplify-Swift-dummy.m"; sourceTree = "<group>"; };
 		7974A66AAF9FA704FF50C77BA5D31D65 /* Pods-Simplify-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplify-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		797F48335B56B00418BBE333FF97D7C1 /* Pods-Simplify-Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simplify-Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A237A929AADFBEE851CF1B5D85B9A6D8 /* Pods-Simplify-Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simplify-Swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		AC09FD8FC41018122876CA2B1CCD1823 /* Pods-Simplify-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplify-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C10B78C1616A1D8306C6FFC12125DFCF /* Pods-Simplify-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C61DD57A2357C44B12BFB16E51196E2D /* Pods-Simplify-Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simplify-Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C67C1EE05E95BCA112980700E4C39D2E /* Pods-Simplify-Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Simplify-Swift_Example.modulemap"; sourceTree = "<group>"; };
-		C6D1572266475656197C1C938FC0FD60 /* Simplify_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Simplify_Swift.framework; path = "Simplify-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D1572266475656197C1C938FC0FD60 /* Simplify_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simplify_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E5A8FF7CF8863D7EE4F889DA0F2F1799 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA9CBF1ADB84105D68B8964EB031BAE0 /* Pods_Simplify_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simplify_Swift_Example.framework; path = "Pods-Simplify-Swift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9CBF1ADB84105D68B8964EB031BAE0 /* Pods_Simplify_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simplify_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F104204AD919948C36AEAC49D641640D /* Simplify-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-prefix.pch"; sourceTree = "<group>"; };
 		F1C46EB20C33AA5FA0C1B497A17ADB38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD50C48388C5F10878363B095616E498 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FD50C48388C5F10878363B095616E498 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,10 +245,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					DAB591F490F3A18FB87077078AF3996C = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -465,8 +470,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -496,7 +500,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -528,7 +532,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

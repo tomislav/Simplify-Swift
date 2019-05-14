@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Simplify-Swift'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'A high performance Swift 2D/3D polyline simplification library'
 
   s.description      = <<-DESC
@@ -23,5 +23,5 @@ Simplify-Swift is a high-performance Swift polyline simplification library porte
   
   s.ios.deployment_target = '9.3'
   s.source_files = 'Simplify-Swift/Classes/**/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end

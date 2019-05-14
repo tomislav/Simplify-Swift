@@ -102,7 +102,7 @@ class ViewController: UIViewController {
 
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
-        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.bold)]
+        let attrs: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.bold)]
         let boldString = NSMutableAttributedString(string:text, attributes: attrs)
         append(boldString)
         

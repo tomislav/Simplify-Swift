@@ -23,6 +23,7 @@
 
 import Foundation
 import CoreLocation
+import CoreGraphics
 
 public protocol SimplifyValue {
     var xValue: Double { get }

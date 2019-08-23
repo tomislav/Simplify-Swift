@@ -16,12 +16,22 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-Simplify-Swift is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+
+To integrate Simplify-Swift into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ```ruby
 pod 'Simplify-Swift'
 ```
+
+### Swift Package Manager (SPM)
+
+To integrate using Apple's Swift package manager, add the following as a dependency to your Package.swift:
+
+```
+.package(url: "https://github.com/tomislav/Simplify-Swift.git", .upToNextMajor(from: "1.0.0"))
+```
+
 
 ## Usage
 

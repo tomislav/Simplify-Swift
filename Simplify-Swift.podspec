@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Simplify-Swift'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'A high performance Swift 2D/3D polyline simplification library'
 
   s.description      = <<-DESC

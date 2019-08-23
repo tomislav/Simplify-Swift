@@ -34,7 +34,7 @@
 		0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-umbrella.h"; sourceTree = "<group>"; };
 		1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Simplify-Swift.xcconfig"; sourceTree = "<group>"; };
 		17EB9F73DB60DE8351FA4A63F2B6E33E /* Pods-Simplify-Swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-resources.sh"; sourceTree = "<group>"; };
-		1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "Simplify-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1ABF3B6607F1DFCAF8B2F22273CDDA93 /* SimplifySwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SimplifySwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3034247E06E5267EC1D12539F7CDBAC1 /* Simplify-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Simplify-Swift-dummy.m"; sourceTree = "<group>"; };
 		7974A66AAF9FA704FF50C77BA5D31D65 /* Pods-Simplify-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplify-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		797F48335B56B00418BBE333FF97D7C1 /* Pods-Simplify-Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simplify-Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			children = (
 				FD50C48388C5F10878363B095616E498 /* LICENSE */,
 				0070ADFDF84914F112504907A8B9ABF0 /* README.md */,
-				1ABF3B6607F1DFCAF8B2F22273CDDA93 /* Simplify-Swift.podspec */,
+				1ABF3B6607F1DFCAF8B2F22273CDDA93 /* SimplifySwift.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";

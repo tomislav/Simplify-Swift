@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "Simplify-Swift",
+    name: "SimplifySwift",
     products: [
         .library(
-            name: "Simplify-Swift",
-            targets: ["Simplify-Swift"]),
+            name: "SimplifySwift",
+            targets: ["SimplifySwift"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "Simplify-Swift",
+            name: "SimplifySwift",
             dependencies: [],
             exclude: ["Example"])
     ]

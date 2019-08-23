@@ -30,7 +30,7 @@
 		0070ADFDF84914F112504907A8B9ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		023F8E142C55200404B444E02D4F3589 /* Simplify-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Simplify-Swift.modulemap"; sourceTree = "<group>"; };
 		0644BE0FD8B465978C55F91654CF914A /* Pods-Simplify-Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simplify-Swift_Example-dummy.m"; sourceTree = "<group>"; };
-		0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simplify.swift; path = Sources/Simplify.swift; sourceTree = "<group>"; };
+		0708AF90B49A8B2B2D8AD3BC7D5F8066 /* Simplify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simplify.swift; path = "Sources/Simplify-Swift/Simplify.swift"; sourceTree = "<group>"; };
 		0E203EB05486311F2C2BCA0A6F9367EA /* Simplify-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplify-Swift-umbrella.h"; sourceTree = "<group>"; };
 		1032EAAFBE5F9FC3B3B565E3B1530C3D /* Simplify-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Simplify-Swift.xcconfig"; sourceTree = "<group>"; };
 		17EB9F73DB60DE8351FA4A63F2B6E33E /* Pods-Simplify-Swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplify-Swift_Example-resources.sh"; sourceTree = "<group>"; };

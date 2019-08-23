@@ -1,28 +1,20 @@
-# Simplify-Swift
+# SimplifySwift
 
-[![Version](https://img.shields.io/cocoapods/v/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)
-[![License](https://img.shields.io/cocoapods/l/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)
-[![Platform](https://img.shields.io/cocoapods/p/Simplify-Swift.svg?style=flat)](https://cocoapods.org/pods/Simplify-Swift)
+[![Version](https://img.shields.io/cocoapods/v/SimplifySwift.svg?style=flat)](https://cocoapods.org/pods/SimplifySwift)
+[![License](https://img.shields.io/cocoapods/l/SimplifySwift.svg?style=flat)](https://cocoapods.org/pods/SimplifySwift)
+[![Platform](https://img.shields.io/cocoapods/p/SimplifySwift.svg?style=flat)](https://cocoapods.org/pods/SimplifySwift)
 
-Simplify-Swift is a high-performance Swift polyline simplification library ported from [Simplify.js](http://mourner.github.io/simplify-js/). The original Javascript library was extracted from [Leaflet](https://leafletjs.com), a JS interactive maps library by [Vladimir Agafonkin](http://agafonkin.com/en). It uses a combination of Douglas-Peucker and Radial Distance algorithms.
+SimplifySwift is a high-performance Swift polyline simplification library ported from [Simplify.js](http://mourner.github.io/simplify-js/). The original Javascript library was extracted from [Leaflet](https://leafletjs.com), a JS interactive maps library by [Vladimir Agafonkin](http://agafonkin.com/en). It uses a combination of Douglas-Peucker and Radial Distance algorithms.
 
 Polyline simplification dramatically reduces the number of points in a polyline while retaining its shape, giving a huge performance boost when processing it and also reducing visual noise. For example, it's essential when rendering a large polyline in MapKit.
 
-![Simplify-Swift screenshot](https://raw.githubusercontent.com/tomislav/Simplify-Swift/master/screenshot.png)
+![SimplifySwift screenshot](https://raw.githubusercontent.com/tomislav/Simplify-Swift/master/screenshot.png)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
-
-### CocoaPods
-
-To integrate Simplify-Swift into your Xcode project using CocoaPods, specify it in your Podfile:
-
-```ruby
-pod 'Simplify-Swift'
-```
 
 ### Swift Package Manager (SPM)
 
@@ -32,6 +24,13 @@ To integrate using Apple's Swift package manager, add the following as a depende
 .package(url: "https://github.com/tomislav/Simplify-Swift.git", .upToNextMajor(from: "1.0.0"))
 ```
 
+### CocoaPods
+
+To integrate SimplifySwift into your Xcode project using CocoaPods, specify it in your Podfile:
+
+```ruby
+pod 'SimplifySwift'
+```
 
 ## Usage
 
@@ -51,4 +50,4 @@ Tomislav Filipcic, tf@7sols.com, [@tomislav](https://twitter.com/tomislav)
 
 ## License
 
-Simplify-Swift is available under the MIT license. See the LICENSE file for more info.
+SimplifySwift is available under the MIT license. See the LICENSE file for more info.

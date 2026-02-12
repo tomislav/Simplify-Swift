@@ -22,8 +22,14 @@
 //  THE SOFTWARE.
 
 import Foundation
-import CoreLocation
+
+#if canImport(CoreGraphics)
 import CoreGraphics
+#endif
+
+#if canImport(CoreLocation)
+import CoreLocation
+#endif
 
 public protocol SimplifyValue {
     var xValue: Double { get }
@@ -34,29 +40,31 @@ private func equalsPoints<T: SimplifyValue>(l: T, r: T) -> Bool {
     return l.xValue == r.xValue && l.yValue == r.yValue
 }
 
+#if canImport(CoreGraphics)
 extension CGPoint: SimplifyValue {
-    
     public var xValue: Double {
         return Double(x)
     }
-    
+
     public var yValue: Double {
         return Double(y)
     }
 }
+#endif
 
+#if canImport(CoreLocation)
 extension CLLocationCoordinate2D: SimplifyValue {
-    
     public var xValue: Double {
         return latitude
     }
-    
+
     public var yValue: Double {
         return longitude
     }
 }
+#endif
 
-open class Simplify {
+public enum Simplify {
     /**
      Calculate square distance
      
@@ -65,7 +73,7 @@ open class Simplify {
      
      - returns: square distance between two points
      */
-    private class func getSquareDistance<T:SimplifyValue>(_ pointA: T,_ pointB: T) -> Double {
+    private static func getSquareDistance<T: SimplifyValue>(_ pointA: T,_ pointB: T) -> Double {
         return (pointA.xValue - pointB.xValue) * (pointA.xValue - pointB.xValue) + (pointA.yValue - pointB.yValue) * (pointA.yValue - pointB.yValue)
     }
     
@@ -78,7 +86,7 @@ open class Simplify {
 
      - returns: square distance between point to a segment
      */
-    private class func getSquareSegmentDistance<T:SimplifyValue>(point p: T, seg1 s1: T, seg2 s2: T) -> Double {
+    private static func getSquareSegmentDistance<T: SimplifyValue>(point p: T, seg1 s1: T, seg2 s2: T) -> Double {
         
         var x = s1.xValue
         var y = s1.yValue
@@ -110,7 +118,7 @@ open class Simplify {
      
      - returns: Returns an array of simplified points
      */
-    private class func simplifyDouglasPeucker<T:SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
+    private static func simplifyDouglasPeucker<T: SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
         if points.count <= 2 {
             return points
         }
@@ -165,7 +173,7 @@ open class Simplify {
      
      - returns: Returns an array of simplified points
      */
-    private class func simplifyRadialDistance<T:SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
+    private static func simplifyRadialDistance<T: SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
         if points.count <= 2 {
             return points
         }
@@ -200,7 +208,7 @@ open class Simplify {
      - returns: Returns an array of simplified points
      */
     
-    open class func simplify<T:SimplifyValue>(_ points: [T], tolerance: Double = 1, highQuality: Bool = false) -> [T] {
+    public static func simplify<T: SimplifyValue>(_ points: [T], tolerance: Double = 1, highQuality: Bool = false) -> [T] {
         if points.count <= 2 {
             return points
         }
@@ -212,7 +220,7 @@ open class Simplify {
     }
 
     @available(*, deprecated, message: "Use simplify(_:tolerance:highQuality:) with a non-optional Double tolerance.")
-    open class func simplify<T:SimplifyValue>(_ points: [T], tolerance: Float?, highQuality: Bool = false) -> [T] {
+    public static func simplify<T: SimplifyValue>(_ points: [T], tolerance: Float?, highQuality: Bool = false) -> [T] {
         return simplify(points, tolerance: tolerance.map(Double.init) ?? 1, highQuality: highQuality)
     }
 }

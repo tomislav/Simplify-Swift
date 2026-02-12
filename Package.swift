@@ -1,15 +1,19 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.9
 
 import PackageDescription
 
 let package = Package(
     name: "SimplifySwift",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v10_15),
+        .tvOS(.v13),
+        .watchOS(.v6)
+    ],
     products: [
         .library(
             name: "SimplifySwift",
-            targets: ["SimplifySwift"]),
-    ],
-    dependencies: [
+            targets: ["SimplifySwift"])
     ],
     targets: [
         .target(
@@ -18,5 +22,6 @@ let package = Package(
         .testTarget(
             name: "SimplifySwiftTests",
             dependencies: ["SimplifySwift"])
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

@@ -14,7 +14,9 @@ let package = Package(
     targets: [
         .target(
             name: "SimplifySwift",
-            dependencies: [],
-            exclude: ["Example"])
+            dependencies: []),
+        .testTarget(
+            name: "SimplifySwiftTests",
+            dependencies: ["SimplifySwift"])
     ]
 )

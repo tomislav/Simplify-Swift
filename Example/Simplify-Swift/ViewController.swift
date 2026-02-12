@@ -23,7 +23,6 @@
 //  THE SOFTWARE.
 
 import UIKit
-import Simplify_Swift
 
 class ViewController: UIViewController {
     @IBOutlet var textLabel: UILabel!
@@ -60,7 +59,7 @@ class ViewController: UIViewController {
     }
     
     func refreshPolylineView() {
-        let tolerance = Float(toleranceSlider!.value)
+        let tolerance = Double(toleranceSlider!.value)
         let highQuality = hqSwitch.isOn
 
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {

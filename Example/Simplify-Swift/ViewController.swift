@@ -25,29 +25,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private struct ExamplePoint: Decodable {
+        let x: CGFloat
+        let y: CGFloat
+    }
+
     @IBOutlet var textLabel: UILabel!
     @IBOutlet var toleranceSlider: UISlider!
     @IBOutlet var hqSwitch: UISwitch!
     @IBOutlet var polylineView: PolylineView!
-    fileprivate var points: [CGPoint] = []
+    private var points: [CGPoint] = []
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let testDataPath = Bundle.main.path(forResource: "test-data", ofType: "json")
-        let testData = try? Data(contentsOf: URL(fileURLWithPath: testDataPath!), options: [])
-        let testDataObj: AnyObject? = try! JSONSerialization.jsonObject(with: testData!, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject?
-        
-        if let testDataObj = testDataObj as? NSArray {
-            for idx in 0 ..< testDataObj.count {
-                if let itemDict = testDataObj[idx] as? NSDictionary {
-                    if let x = itemDict["x"] as? NSNumber, let y = itemDict["y"] as? NSNumber {
-                        points.append( CGPoint( x: CGFloat(x.floatValue), y: CGFloat(y.floatValue)) )
-                    }
-                }
-            }
-            refreshPolylineView()
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadTestData()
+        refreshPolylineView()
     }
     
     @IBAction func didChangeHQParameter(_ sender: UISwitch) {
@@ -58,38 +50,48 @@ class ViewController: UIViewController {
         refreshPolylineView()
     }
     
-    func refreshPolylineView() {
-        let tolerance = Double(toleranceSlider!.value)
-        let highQuality = hqSwitch.isOn
+    private func loadTestData() {
+        guard let testDataURL = Bundle.main.url(forResource: "test-data", withExtension: "json"),
+              let data = try? Data(contentsOf: testDataURL),
+              let decodedPoints = try? JSONDecoder().decode([ExamplePoint].self, from: data) else {
+            points = []
+            return
+        }
 
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+        points = decodedPoints.map { CGPoint(x: $0.x, y: $0.y) }
+    }
+
+    func refreshPolylineView() {
+        let tolerance = Double(toleranceSlider.value)
+        let highQuality = hqSwitch.isOn
+        let sourcePoints = points
+
+        DispatchQueue.global(qos: .userInitiated).async {
             let startTime = DispatchTime.now()
-            let simplified = Simplify.simplify(self.points, tolerance: tolerance, highQuality: highQuality)
+            let simplified = Simplify.simplify(sourcePoints, tolerance: tolerance, highQuality: highQuality)
             let endTime = DispatchTime.now()
             
             let duration = Double(endTime.uptimeNanoseconds - startTime.uptimeNanoseconds) / 1000000.0
-            let timesLess = Float(self.points.count) / (Float(simplified.count))
+            let timesLess = simplified.isEmpty ? 0 : Float(sourcePoints.count) / Float(simplified.count)
             
             DispatchQueue.main.async {
                 self.polylineView.points = simplified
-                self.polylineView.setNeedsDisplay()
                 
                 let string = NSMutableAttributedString()
                 string
-                    .bold(String(format: "%d", self.points.count))
+                    .bold(String(format: "%d", sourcePoints.count))
                     .normal(" points, simplified with tolerance: ")
-                    .bold(String(format: "%.2f", self.toleranceSlider!.value))
+                    .bold(String(format: "%.2f", self.toleranceSlider.value))
                     .normal(" px\n")
                     .normal("After simplification: ")
-                    .bold(String(format: "%d", self.polylineView!.points!.count))
+                    .bold(String(format: "%d", simplified.count))
                     .normal(" points (~")
                     .bold(String(format: "%.0f", timesLess))
                     .normal(" times less)\n")
                     .normal("Performed in ")
                     .bold(String(format: "%.2f", duration))
                     .normal(" ms")
-                
-                self.textLabel!.attributedText = string
+                self.textLabel.attributedText = string
             }
         }
     }

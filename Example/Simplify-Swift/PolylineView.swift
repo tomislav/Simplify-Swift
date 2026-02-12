@@ -26,34 +26,27 @@ import Foundation
 import UIKit
 
 class PolylineView: UIView {
-    var points: [CGPoint]?
+    var points: [CGPoint] = [] {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     override func draw(_ rect: CGRect) {
-        guard points != nil else {
+        guard points.count > 1, let context = UIGraphicsGetCurrentContext() else {
             return
         }
-        
-        let context = UIGraphicsGetCurrentContext()
-        context?.setStrokeColor(UIColor.red.cgColor)
-        context?.setLineWidth(1.0)
-        
-        let minX = points!.first!.x
-        var minY = points!.first!.y
-        
-        for i in 1 ..< points!.count {
-            let p = points![i]
-            if p.y < minY {
-                minY = p.y
-            }
+
+        context.setStrokeColor(UIColor.red.cgColor)
+        context.setLineWidth(1.0)
+
+        let minX = points.map(\.x).min() ?? 0
+        let minY = points.map(\.y).min() ?? 0
+
+        context.move(to: CGPoint(x: points[0].x - minX, y: points[0].y - minY))
+        for point in points.dropFirst() {
+            context.addLine(to: CGPoint(x: point.x - minX, y: point.y - minY))
         }
-        
-        for i in 0 ..< (points!.count-1) {
-            let p = points![i]
-            let p1 = points![i+1]
-            context?.move(to: CGPoint(x: p.x-minX, y: p.y-minY))
-            context?.addLine(to: CGPoint(x: p1.x-minX, y: p1.y-minY))
-            context?.strokePath()
-        }
-        context?.drawPath(using: CGPathDrawingMode.stroke);
+        context.strokePath()
     }
 }

@@ -30,7 +30,7 @@ public protocol SimplifyValue {
     var yValue: Double { get }
 }
 
-func equalsPoints<T: SimplifyValue>(l: T, r: T) -> Bool {
+private func equalsPoints<T: SimplifyValue>(l: T, r: T) -> Bool {
     return l.xValue == r.xValue && l.yValue == r.yValue
 }
 
@@ -65,8 +65,8 @@ open class Simplify {
      
      - returns: square distance between two points
      */
-    fileprivate class func getSquareDistance<T:SimplifyValue>(_ pointA: T,_ pointB: T) -> Float {
-        return Float((pointA.xValue - pointB.xValue) * (pointA.xValue - pointB.xValue) + (pointA.yValue - pointB.yValue) * (pointA.yValue - pointB.yValue))
+    private class func getSquareDistance<T:SimplifyValue>(_ pointA: T,_ pointB: T) -> Double {
+        return (pointA.xValue - pointB.xValue) * (pointA.xValue - pointB.xValue) + (pointA.yValue - pointB.yValue) * (pointA.yValue - pointB.yValue)
     }
     
     /**
@@ -78,7 +78,7 @@ open class Simplify {
 
      - returns: square distance between point to a segment
      */
-    fileprivate class func getSquareSegmentDistance<T:SimplifyValue>(point p: T, seg1 s1: T, seg2 s2: T) -> Float {
+    private class func getSquareSegmentDistance<T:SimplifyValue>(point p: T, seg1 s1: T, seg2 s2: T) -> Double {
         
         var x = s1.xValue
         var y = s1.yValue
@@ -99,7 +99,7 @@ open class Simplify {
         dx = p.xValue - x
         dy = p.yValue - y
         
-        return Float((dx * dx) + (dy * dy))
+        return (dx * dx) + (dy * dy)
     }
     
     /**
@@ -110,39 +110,51 @@ open class Simplify {
      
      - returns: Returns an array of simplified points
      */
-    fileprivate class func simplifyDouglasPeucker<T:SimplifyValue>(_ points: [T], tolerance: Float!) -> [T] {
+    private class func simplifyDouglasPeucker<T:SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
         if points.count <= 2 {
             return points
         }
-        
-        let lastPoint: Int = points.count - 1
-        var result: [T] = [points.first!]
-        simplifyDouglasPeuckerStep(points, first: 0, last: lastPoint, tolerance: tolerance, simplified: &result)
-        result.append(points[lastPoint])
+
+        let lastPoint = points.count - 1
+        var keep = Array(repeating: false, count: points.count)
+        keep[0] = true
+        keep[lastPoint] = true
+
+        var stack: [(first: Int, last: Int)] = [(0, lastPoint)]
+        while let (first, last) = stack.popLast() {
+            if last - first <= 1 {
+                continue
+            }
+
+            var maxSquareDistance = squaredTolerance
+            var index = 0
+
+            for i in first + 1 ..< last {
+                let squareDistance = getSquareSegmentDistance(point: points[i], seg1: points[first], seg2: points[last])
+                if squareDistance > maxSquareDistance {
+                    index = i
+                    maxSquareDistance = squareDistance
+                }
+            }
+
+            if maxSquareDistance > squaredTolerance {
+                keep[index] = true
+                if index - first > 1 {
+                    stack.append((first, index))
+                }
+                if last - index > 1 {
+                    stack.append((index, last))
+                }
+            }
+        }
+
+        var result: [T] = []
+        result.reserveCapacity(points.count)
+        for (index, shouldKeepPoint) in keep.enumerated() where shouldKeepPoint {
+            result.append(points[index])
+        }
+
         return result
-    }
-    
-    fileprivate class func simplifyDouglasPeuckerStep<T:SimplifyValue>(_ points: [T], first: Int, last: Int, tolerance: Float, simplified: inout [T]) {
-        var maxSquareDistance = tolerance
-        var index = 0
-        
-        for i in first + 1 ..< last {
-            let sqDist = getSquareSegmentDistance(point: points[i], seg1: points[first], seg2: points[last])
-            if sqDist > maxSquareDistance {
-                index = i
-                maxSquareDistance = sqDist
-            }
-        }
-        
-        if maxSquareDistance > tolerance {
-            if index - first > 1 {
-                simplifyDouglasPeuckerStep(points, first: first, last: index, tolerance: tolerance, simplified: &simplified)
-            }
-            simplified.append(points[index])
-            if last - index > 1 {
-                simplifyDouglasPeuckerStep(points, first: index, last: last, tolerance: tolerance, simplified: &simplified)
-            }
-        }
     }
     
     /**
@@ -153,19 +165,19 @@ open class Simplify {
      
      - returns: Returns an array of simplified points
      */
-    fileprivate class func simplifyRadialDistance<T:SimplifyValue>(_ points: [T], tolerance: Float!) -> [T] {
+    private class func simplifyRadialDistance<T:SimplifyValue>(_ points: [T], squaredTolerance: Double) -> [T] {
         if points.count <= 2 {
             return points
         }
         
-        var prevPoint: T = points.first!
+        var prevPoint = points[0]
         var newPoints: [T] = [prevPoint]
-        var point: T = points[1]
+        var point = points[1]
         
         for idx in 1 ..< points.count {
             point = points[idx]
             let distance = getSquareDistance(point, prevPoint)
-            if distance > tolerance! {
+            if distance > squaredTolerance {
                 newPoints.append(point)
                 prevPoint = point
             }
@@ -188,14 +200,19 @@ open class Simplify {
      - returns: Returns an array of simplified points
      */
     
-    open class func simplify<T:SimplifyValue>(_ points: [T], tolerance: Float?, highQuality: Bool = false) -> [T] {
+    open class func simplify<T:SimplifyValue>(_ points: [T], tolerance: Double = 1, highQuality: Bool = false) -> [T] {
         if points.count <= 2 {
             return points
         }
 
-        let squareTolerance = (tolerance != nil ? tolerance! * tolerance! : 1.0)
-        var result: [T] = (highQuality == true ? points : simplifyRadialDistance(points, tolerance: squareTolerance))
-        result = simplifyDouglasPeucker(result, tolerance: squareTolerance)
+        let squareTolerance = tolerance * tolerance
+        var result: [T] = (highQuality ? points : simplifyRadialDistance(points, squaredTolerance: squareTolerance))
+        result = simplifyDouglasPeucker(result, squaredTolerance: squareTolerance)
         return result
+    }
+
+    @available(*, deprecated, message: "Use simplify(_:tolerance:highQuality:) with a non-optional Double tolerance.")
+    open class func simplify<T:SimplifyValue>(_ points: [T], tolerance: Float?, highQuality: Bool = false) -> [T] {
+        return simplify(points, tolerance: tolerance.map(Double.init) ?? 1, highQuality: highQuality)
     }
 }
